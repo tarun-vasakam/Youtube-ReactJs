@@ -1,13 +1,208 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+.app-main{
+  display: flex;
+  min-height: 100vh;
+}
+.app-right{
+  margin-left: 70px;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #181818;
+}
+.side-main{
+  top: 0;
+  left: 0;
+  background-color: #181818;
+  width: 70px;
+  height: 100%;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 2;
+}
+.side-main svg{
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+.side-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 17px;
+  cursor: pointer;
+}
+.side-icon-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 68px;
+  padding: 13px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.side-icon-row p{
+  color: white;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: sans-serif;
+}
+.side-icon-row:hover{
+  background-color: #3d3d3d;
+}
+.header-main{
+  top: 0;
+  right: 0;
+  padding-left: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  background-color: #181818;
+}
+.header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.header-logo svg{
+  height: 32px;
+  width: 32px;
+}
+.header-logo p{
+  font-size: 22px;
+  padding-left: 3px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-mic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-mic svg{
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  padding: 5px;
+  margin-left: 10px;
+  color: white;
+  background-color: #3d3d3d;
+  cursor: pointer;
+}
+.header-search input{
+  padding: 4px;
+  border: none;
+  font-size: 13px;
+  padding-left: 20px;
+  margin: 4px 0px;
+  background-color: #181818;
+  color: white;
+}
+.header-search input::placeholder{
+  padding-left: 15px;
+  font-size: 14px;
+}
+.header-search input:focus{
+  outline: none
+}
+.header-searchbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid #3d3d3d;
+  overflow: hidden;
+  background-color: #181818;
+}
+.search-btn{
+  background-color: #3d3d3d;
+  padding: 2px 15px;
+  border: none;
+}
+.search-btn svg{
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+.header-profile svg{
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  border-radius: 50px;
+  margin-right: 12px;
+  color: white;
+  background-color: #181818;
+}
+.main-main{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  background-color: #181818;
+}
+.video-main{
+  padding: 10px;
+  background-color: #181818;
+  border-radius: 10px;
+}
+.video-main:hover{
+  background-color: #3d3d3d;
+}
+.video-name{
+  padding-bottom: 2px;
+}
+.video-cname{
+  padding-bottom: 2px;
+}
+.video-main iframe{
+  border-radius: 10px;
+}
+.video-detail{
+  width: 235px;
+}
+.video-logo img{
+  margin: 5px 10px 0px 3px;
+  height: 27px;
+  border-radius: 50px;
+}
+.video-content{
+  display: flex;
+  font-size: 14px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.video-dot{
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+
+
+
+
+
+
+
